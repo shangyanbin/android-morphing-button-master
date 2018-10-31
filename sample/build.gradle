@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.dd.morphingbutton.sample"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:support-v4:27.1.1'
+    implementation 'io.reactivex:rxjava:1.2.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.android.support:recyclerview-v7:27.1.0'
+}
